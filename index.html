@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="btn">
+        <input type="color" name="color" id="colorBtn">
+        <!-- <div class="cBtn">
+            <button class="colorBtn" id="blackC"  ></button>
+            <button class="colorBtn" id="redC"    ></button>
+            <button class="colorBtn" id="greenC"  ></button>
+            <button class="colorBtn" id="orangeC" ></button>
+            <button class="colorBtn" id="blueC"   ></button> -->
+        <!-- </div> -->
+        <div class="sBtn">
+            <button class="shapeBtn " id="penS"  onclick="drawLine('stop')"  ><img src="media/-pen_96740.png" alt="" srcset=""></button>
+            <button class="shapeBtn " id="rectS"   ><img src="media/rectangle.png" alt="" srcset=""></button>
+            <button class="shapeBtn " id="lineS" onclick = "drawLine('Run')"  ><img src="media/diagonal-line (2).png" alt=""></button>
+        </div>
+        <div class="clearBtn">
+            <button id="clear"><img src="media/clear-icon-9210.png" alt="clearIcon"></button>
+        </div>
+        <div class="saveBtn">
+            <!-- <button id="save"><img src="media/floppy-disk.png" alt="saveIcone" ></button>             -->
+            <a  href="#" id="save" download="3limo.png"><img src="media/floppy-disk.png" alt="saveIcone" ></a>            
+        </div>
+        <input dir="rtl" type="range" id="lineWidth" min="1" max="100" onchange="changeLW(this.value)" >
+    </div>
+    <canvas id="ourCanvas" style="background-image: url(media/clear-icon-9210.png);"></canvas>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

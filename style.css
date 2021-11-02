@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow-x: hidden;
+}
+
+#ourCanvas{
+    border: 2px solid black;
+    float: left;
+}
+
+
+/* -------- color btn ---------*/
+
+.btn{
+    background-color:rgba(0, 0, 0, 0.616);
+    height: 20%;
+    width: 70%;
+    float: right;
+    border-radius:5px 0px 0px 0px; 
+}
+
+
+#colorBtn{
+    width: 50px;
+    height: 30px;
+    float: right;
+    margin:10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    /* display: none; */
+ }
+
+/* #redC{
+    background-color: red;
+}
+#greenC{
+    background-color: green;
+}
+#orangeC{
+    background-color: orange;
+}
+#blueC{
+    background-color: blue;
+}
+#blackC{
+    background-color: black;
+} */ 
+
+#rectS , #lineS , #penS{
+    border: 2px solid white;
+    background: none;
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lineS img , #rectS img ,#penS img{
+    width: 25px;
+    height: 25px;
+    motion-rotation: reverse;
+}
+
+.sBtn{
+    float: right;
+}
+
+.btn input{
+    float: right;
+    margin: 15px 10px 10px 10px;
+}
+
+#clear{
+    border: 2px solid white;
+    background: none;
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+#clear img{
+    width: 25px;
+    height: 25px;
+    motion-rotation: reverse;
+}
+
+#save{
+    border: 2px solid white;
+    background: none;
+    width: 50px;
+    height: 27px;
+    margin: 10px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+#save img{
+    width: 25px;
+    height:25px;
+    margin-left: 12px;
+    motion-rotation: reverse;  
+}
+
+

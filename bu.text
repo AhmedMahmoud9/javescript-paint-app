@@ -1,0 +1,45 @@
+const canvas = document.querySelector("#ourCanvas");
+const ctx = canvas.getContext("2d");
+let btnList = document.querySelectorAll(".colorBtn");
+var color ; 
+    
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+for (i= 0 ; i < btnList.length ; i++){
+    btnList[i].addEventListener("click",changeColor)
+}
+
+function changeColor(){
+    color = getComputedStyle(this).backgroundColor;
+}
+
+function startPosition(){
+    painting = true;
+}
+
+function finishedPosition(){
+    painting = false;
+    ctx.beginPath()
+}
+
+function draw(e){
+    if(!painting) return;
+    ctx.lineWidth = 10;
+    ctx.lineCap = "round";
+    ctx.strokeStyle = color;
+    ctx.lineTo(e.clientX, e.clientY);
+    ctx.stroke();
+    ctx.beginPath()
+    ctx.moveTo(e.clientX, e.clientY)
+}
+
+canvas.addEventListener("mousedown", startPosition);
+canvas.addEventListener("mouseup", finishedPosition);
+canvas.addEventListener("mousemove", draw);
+
+
+
+    
+
+
